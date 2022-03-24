@@ -5,8 +5,8 @@ body {
 .opener {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     margin-bottom: 20px;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 img{
-    height: 200px;
+    height: 170px;
     width: auto;
     border: 3px solid rosybrown;
     padding: 2px;
@@ -29,7 +29,7 @@ img{
 
 .gallery_about_me div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     padding-bottom: 20px;
     justify-items: center;
 }
@@ -40,7 +40,7 @@ img{
 
 .picture_gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr; 
     column-gap: 40px; 
     row-gap: 15px;
     justify-items: center;
@@ -92,7 +92,6 @@ p {
 }
 
 header nav li{
-    width: 25%;
     font-size: 20px;
     text-decoration: none;
     background-color: rosybrown;
@@ -103,6 +102,8 @@ header nav li{
 ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .active {
@@ -123,7 +124,6 @@ h1{
     text-decoration: underline;
     text-shadow: 1px 1px black;
     font-family: 'Lato', 'sans-serif';
-    margin: 20px 10px;
     padding: 5px;
     padding-bottom: 20px;
 }
@@ -160,13 +160,13 @@ h1 {
     animation: mymove 5s;
 }  
 
-@keyframes myopacity {
-    from {opacity: 0}
-    to {opacity: 1}
+@keyframes mygrow {
+    from {height: 120px;}
+    to {height: 170px;}
 }
-    
+
 img {
-    animation: myopacity 3s;
+    animation: mygrow 3s;
 }
 
 .skip {
@@ -200,7 +200,7 @@ form {
 
 .video_form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .form .video{
@@ -210,7 +210,9 @@ form {
 
 .video {
     padding: 0px;
-    margin: 0px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -224,6 +226,8 @@ h3 {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 7px;
 }
 
 
@@ -247,23 +251,30 @@ h3 {
     .video {
         display: hidden;
     }
+
+
+    .picture_gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    
 }
     
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 700px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
+    .gallery_about_me div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .video_form {
+        grid-template-columns: 1fr 1fr;
     }
 
     .opener {
-        padding-bottom: 100px;
-    }
-
-    .skip {
-        font-size: 20px;
-        padding-left: 5px;
+        padding-top: 300px;
+        padding-bottom: 300px;
     }
   
 }
