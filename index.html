@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H6TPYNTZX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9H6TPYNTZX');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/html5resetproject.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/15de464be1.js" crossorigin="anonymous"></script>
+  <title>Home Page</title>
+</head>
+
+<body>
+  <div class = "no_background">
+  <a class = "skip" href="restaurants.html">Skip to Main Content</a>
+  <header>
+      <nav>
+          <ul>
+          <!-- Since I am on the index file I added class = action to the link to index. -->
+              <li class = "active"><a href = "index.html" >Home Page</a></li>
+              <li><a href = "restaurants.html">Restaurant Recommendations</a></li>
+              <li><a href = "landmarks.html">Notable Landmarks</a></li>
+              <li><a href = "transportation.html">Transportation Methods</a></li>
+          </ul>
+          <h1>The Ultimate Singapore Travel Guide!</h1>
+      </nav>
+  </header>
+  </div>
+
+  <main>
+    <div class = "opener">
+        <p> Singapore is a small city-state located in South-East Asia which borders Malaysia. The country is officially
+          just 56 years old (!!!) which is likely younger than some of you reading this blog. The country first 
+          became an area of international interest after it established itself as the world's largest publically
+          owned shipping port. This allowed for a constant influx of new people from different backgrounds to enter the 
+          country and leave their mark on its culture. This is partially why the population is so diverse and unique 
+          in its makeup. The Singaporean government also enacted the 'Speak Good English' movement in 2000 to promote 
+          the adoption of English as the country's main language in order to increase tourism. The movement was a huge 
+          social and cultural success and likely played a large role in bringing you to this blog. <p>
+
+    </div>
+    <div class = "no_background">
+        <div class = "picture_gallery">
+            <div class = "flex_card">
+                <img src = "images/forest.jpg" alt = "Picture of the cloud dome in Singapore" width="200"/>
+              <div class = "flex_text">
+                <p>Singapore is also known as the 'Garden city' due to how green and natural it is. Creations like the cloud 
+                  dome have helped foster and mantain this image that attracts millions of visitors every year. <p>
+              </div>
+            </div>
+
+            <div class = "flex_card">
+                <img src = "images/president.jpg" alt = "Picture of current Singaporean president Halimah Yacoub" width="200"/>
+              <div class="flex_text">
+                <p>Halimah Yacoub is Singapore's current president and the first female president in the country's history. She 
+                   has helped create a safe and prosperous environment in Singapore which has allowed the local population to 
+                   flourish and tourism to increase year-in-year-out.<p>
+              </div>
+            </div>
+        </div>
+
+    <h2> A Little Bit About Me:</h2>
+    
+        <div class = "gallery_about_me">
+              <div>
+                  <img src = "images/tarush_now.jpg" alt = "Picture of me now that I am older" width = "200"/>
+                  <img src = "images/tarush_baby.jpg" alt = "Picture of me as a baby wearing cricket gear" width = "200"/>
+                  <img src = "images/tarush_sg_beach.jpg" alt = "Picture of me at the beach with my friends" width = "200"/>
+            </div>
+        </div>
+
+        <p>Welcome to my travel guide! My name is Tarush Nandrajog. I am currently a sophmore at the University 
+           of Michigan in Ann Arbor, but I have lived in Singapore for just under 10 years over 2 different stints
+           and so I know all of the ins and outs of the country. As you can see from the baby photo, I am a big fan
+           of cricket, as well as football and basketball. In highschool my friends and I also spent a lot of time 
+           at many of the beaches in Singapore, with my personal favourite being Tanjong Beach. Enjoy the sunset photo
+           displayed from the last time I went.</p>
+        
+    <p>Please feel free to click on any of the headers to learn more about why Singapore might be the perfect
+    travel destination for you! <p>
+
+    <div class = "video_form">
+      <div class = "form">
+      <form action="https://formspree.io/f/mzbovrqw" method = "POST">
+        <fieldset> 
+          <legend>Leave Your Personal Information!</legend>
+          <label for="name">Name</label>
+          <i class="fa-solid fa-user-secret"></i>
+            <input type="text" id = "name"><br/>
+          <label for="email">Email:</label>  
+            <i class="fa-solid fa-envelope"></i></i>
+            <input type="email" value = "email@umich.edu" name = "address" ><br/>
+          <label for="country">Location: </label>
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id = "country" name = "countries"><br/>
+          <label for="birth">Date of birth:</label>
+          <i class="fa-solid fa-cake-candles"></i></i>
+            <input type="date" id = "birth" name = "bday"><br/>
+          <label for="message">Leave a message!</label>
+          <i class="fa-solid fa-message"></i>
+          <textarea rows="1" id="message" placeholder="Leave your message!" required="" name = "msg"></textarea>
+          <input type="hidden" id="email-subject" value="Contact Form Submission" name = "subject">
+          <input type ="submit" value = "Save!" name = "bday">
+        </fieldset>
+      </form> 
+      </div>
+
+      <h3> This Could Be You!</h3>
+      <div class = "video">
+      <video width ="300" height = "auto" controls>
+        <source src="videos/singapore_video.mp4" type="video/mp4">
+        
+        Your browser does not support the video tag.
+      </video>
+      </div>
+    </div>
+  
+  </main>
+
+
+  
+
+      <footer>
+        
+        <p>Tarush Nandrajog &copy; 2022 <i class="fa-solid fa-earth-asia"></i></p>
+      </footer>
+      
+    </div>
+</body>
+</html>
+  

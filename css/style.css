@@ -1,0 +1,269 @@
+body {
+    background: url(../images/best_pic.jpeg) #f8eef8; 
+}
+
+.opener {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    margin-bottom: 20px;
+}
+
+.opener p {
+    padding: 10px;
+    padding-bottom: 2px;
+    background: #f8eef8;
+    grid-column: 2 / 3;
+}
+
+img{
+    height: 200px;
+    width: auto;
+    border: 3px solid rosybrown;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.gallery_about_me div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 20px;
+    justify-items: center;
+}
+
+.gallery_about_me {
+    justify-items: center;
+}
+
+.picture_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 40px; 
+    row-gap: 15px;
+    justify-items: center;
+}
+
+.picture_gallery .flex_card {
+    display: flex;
+    background-color: #cad9df;
+    padding-bottom: 0px;
+    margin-bottom: 10px;;
+}
+
+.flex_card {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex_text {
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: none;
+}
+
+.flex_card:hover {
+    transform: scale(1.08);
+}
+
+img:hover{
+    box-shadow: 3px 3px grey;
+    border: 3px solid rgb(212, 97, 135);
+}
+
+ul{
+    color: rosybrown;
+    border: solid grey;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Lato', 'sans-serif';
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header nav li{
+    width: 25%;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rosybrown;
+    border: 1px solid grey;
+    padding: 5px 3px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.active {
+    font-weight: bold;
+    background-color: palevioletred;
+}
+
+a{
+    color:indigo;
+    background-color: transparent;
+}
+
+h1{
+    font-size: 50px;
+    font-style: italic;
+    color:#7C4B4B;
+    border: 2px dashed grey;
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+    font-family: 'Lato', 'sans-serif';
+    margin: 20px 10px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+    color:#7C4B4B;
+    text-shadow: 1px 1px black;
+    font-family: 'Lato', 'sans-serif';
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer p {
+    background-color: #cad9df;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@keyframes mymove{
+    from {color: #DBE9EE}
+    to {color: #7C4B4B}
+}
+
+h1 {
+    animation: mymove 5s;
+}  
+
+@keyframes myopacity {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+    
+img {
+    animation: myopacity 3s;
+}
+
+.skip {
+  padding: 6px;
+  font-weight: bold;
+  background: palevioletred;
+  border: 2px dashed grey;
+  -webkit-transition: top 0.5s ease-out;
+  transition: left 0.5s ease-out;
+  z-index: 1;
+  position: absolute;
+  left: -300px;
+}
+
+.skip:focus {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+}
+
+
+form {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.no_background {
+    background: #DBE9EE;
+    max-width: 100%;
+}
+
+.video_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form .video{
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Lato', 'sans-serif';
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+@media screen and (prefers-reduced-motion) {
+    img {
+        animation: none;
+    }
+
+    h1 {
+        animation: none;
+    }
+
+    img:hover {
+        border: 3px solid rosybrown;
+    }
+
+    .flex_card:hover {
+        transform: none;
+    }
+
+    .video {
+        display: hidden;
+    }
+}
+    
+
+@media screen and (max-width: 480px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .opener {
+        padding-bottom: 100px;
+    }
+
+    .skip {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+  
+}
